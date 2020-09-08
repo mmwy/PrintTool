@@ -1,0 +1,134 @@
+object frmMain: TfrmMain
+  Left = 288
+  Height = 395
+  Top = 185
+  Width = 879
+  Caption = 'frmMain'
+  ClientHeight = 395
+  ClientWidth = 879
+  DesignTimePPI = 120
+  OnShow = FormShow
+  LCLVersion = '2.0.8.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 62
+    Top = 0
+    Width = 879
+    Align = alTop
+    ClientHeight = 62
+    ClientWidth = 879
+    ParentFont = False
+    TabOrder = 0
+    object EdtDevicePath: TEdit
+      Left = 352
+      Height = 28
+      Top = 18
+      Width = 358
+      OnChange = EdtDevicePathChange
+      TabOrder = 3
+      Text = 'EdtDevicePath'
+    end
+    object Label1: TLabel
+      Left = 19
+      Height = 20
+      Top = 22
+      Width = 75
+      Caption = '设备类型：'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CbxPortType: TComboBox
+      Left = 104
+      Height = 28
+      Top = 18
+      Width = 125
+      ItemHeight = 20
+      OnChange = CbxPortTypeChange
+      ParentFont = False
+      TabOrder = 0
+      Text = 'CbxPortType'
+    end
+    object Label3: TLabel
+      Left = 250
+      Height = 20
+      Top = 22
+      Width = 75
+      Caption = '设备清单：'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CbxDevicePath: TComboBox
+      Left = 352
+      Height = 28
+      Top = 18
+      Width = 360
+      ItemHeight = 20
+      OnChange = CbxDevicePathChange
+      ParentFont = False
+      TabOrder = 1
+      Text = 'CbxDevicePath'
+    end
+    object BtnPrint: TButton
+      Left = 750
+      Height = 31
+      Top = 15
+      Width = 94
+      Caption = '打印'
+      OnClick = BtnPrintClick
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 262
+    Top = 62
+    Width = 879
+    Align = alClient
+    Lines.Strings = (
+      '0a53495a45203735206d6d2c203830206d6d0a434c530a5152434f444520203138302c3631302c204c2c342c4d2c3138302c224142434461220a54455854202020203435302c3532302c202254535332342e424632222c3138302c312c312c223830303130303737220a54455854202020203435302c3438302c202254535332342e424632222c3138302c312c312c22e789b9e6ae8a220a54455854202020203430302c3438302c202254535332342e424632222c3138302c312c312c222d2d220a54455854202020203330302c3438302c202254535332342e424632222c3138302c312c312c222a2ae8baabe4bbbde8af81e6988e220a54455854202020203430302c3434302c202254535332342e424632222c3138302c312c312c22e69886e6988ee28692e5a4a7e79086220a54455854202020203535302c3430302c202254535332342e424632222c3138302c312c312c22e4b998e8bda6e697a5e69c9f220a54455854202020203535302c3337302c202254535332342e424632222c3138302c312c312c22323031392d31322d3239220a54455854202020203430302c3430302c202254535332342e424632222c3138302c312c312c22e58f91e8bda6e697b6e997b4220a54455854202020203430302c3337302c202254535332342e424632222c3138302c312c312c2230303a3030220a54455854202020203235302c3430302c202254535332342e424632222c3138302c312c312c22e5baa7e4bd8de58fb7220a54455854202020203235302c3337302c202254535332342e424632222c3138302c312c312c2231220a54455854202020203535302c3334302c202254535332342e424632222c3138302c312c312c22e8bda6e6aca1220a54455854202020203535302c3331302c202254535332342e424632222c3138302c312c312c2230313130220a54455854202020203430302c3334302c202254535332342e424632222c3138302c312c312c22e7a5a8e4bbb7220a54455854202020203430302c3331302c202254535332342e424632222c3138302c312c312c22efbfa53935220a54455854202020203235302c3334302c202254535332342e424632222c3138302c312c312c22e8bda6e7a5a8e7b1bbe59e8b220a54455854202020203235302c3331302c202254535332342e424632222c3138302c312c312c22e585a8e7a5a8220a54455854202020203535302c3238302c202254535332342e424632222c3138302c312c312c22e4b998e8bda6e59cb0e782b9220a54455854202020203430302c3238302c202254535332342e424632222c3138302c312c312c22e4b89ce983a8e6b1bde8bda6e5aea2e8bf90e7ab99220a54455854202020203430302c3235302c202254535332342e424632222c3138302c312c312c22e6ada4e7a5a8e590ab31e5908de5858de7a5a8e584bfe7aba5220a424152434f4445203530302c3232302c2022313238222c2037302c20312c203138302c20332c20332c20223830303130303737220a5052494e5420310a'
+    )
+    ParentFont = False
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 71
+    Top = 324
+    Width = 879
+    Align = alBottom
+    ClientHeight = 71
+    ClientWidth = 879
+    ParentFont = False
+    TabOrder = 2
+    object CheckBox1: TCheckBox
+      Left = 760
+      Height = 24
+      Top = 27
+      Width = 102
+      Caption = '16进制内容'
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label2: TLabel
+      Left = 19
+      Height = 20
+      Top = 29
+      Width = 75
+      Caption = '当前设备：'
+      ParentColor = False
+      ParentFont = False
+    end
+    object EdtDisplayPath: TEdit
+      Left = 104
+      Height = 28
+      Top = 25
+      Width = 636
+      OnChange = EdtDisplayPathChange
+      ParentFont = False
+      TabOrder = 1
+      Text = 'EdtDisplayPath'
+    end
+  end
+end
